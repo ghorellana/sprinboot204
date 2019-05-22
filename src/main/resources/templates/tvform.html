@@ -7,7 +7,7 @@
 <body>
 <form action="#"
           th:action="@{/tvform}"
-          th:object="${tvform}"
+          th:object="${tvshow}"
           method="post">
         Id :<input type="number" th:field="*{id}" />
         <span th:if="${#fields.hasErrors('id')}"
